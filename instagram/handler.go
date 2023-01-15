@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"strings"
 	"time"
+
 	"watgbridge/modules"
 	"watgbridge/state"
 	"watgbridge/utils"
@@ -359,7 +360,7 @@ func tryUserProfile(link string, v *events.Message, chat waTypes.JID) {
 }
 
 func init() {
-	modules.Modules = append(modules.Modules, "Instagram Downloader")
+	state.State.Modules = append(state.State.Modules, "Instagram Downloader")
 	modules.WhatsAppHandlers = append(modules.WhatsAppHandlers,
 		InstagramModuleWhatsAppEventHandler)
 }
