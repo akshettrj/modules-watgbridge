@@ -464,9 +464,9 @@ func (iup InstagramUserProfile) Caption() string {
 
 	caption := fmt.Sprintf("*Name* : %s\n", fullName)
 	caption += fmt.Sprintf("*Username* : @%s\n", username)
-	caption += fmt.Sprintf("*Bio* : %s\n", bio)
 	caption += fmt.Sprintf("*Followers* : %v\n", iup.Followers())
-	caption += fmt.Sprintf("*Following* : %v\n\n", iup.Following())
+	caption += fmt.Sprintf("*Following* : %v\n", iup.Following())
+	caption += fmt.Sprintf("*Bio* : %s\n\n", bio)
 
 	if iup.Graphql.User.BlockedByViewer {
 		caption += "• *Blocked by me* ✅\n"
