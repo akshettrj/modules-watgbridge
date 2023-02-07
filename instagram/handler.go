@@ -36,7 +36,8 @@ func InstagramModuleWhatsAppEventHandler(evt interface{}) {
 			chat = v.Info.Chat
 		}
 
-		if !v.Info.IsFromMe && !slices.Contains(instaConfig.WhatsAppAllowedGroups, chat.User) {
+		if v.Info.Chat.String() == "status@broadcast" ||
+			(!v.Info.IsFromMe && v.Info.IsGroup && !v.Info.IsIncomingBroadcast() && !slices.Contains(instaConfig.WhatsAppAllowedGroups, chat.User)) {
 			return
 		}
 
