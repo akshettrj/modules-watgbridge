@@ -51,9 +51,8 @@ func InstagramModuleWhatsAppEventHandler(evt interface{}) {
 			return
 		}
 
-		textSplit := strings.Split(text, " \n\t")
+		textSplit := strings.Fields(text)
 		for _, token := range textSplit {
-			token = strings.TrimSpace(token)
 			if IsSupportedLink(token) && !IsStoriesLink(token) {
 				downloadLink(token, v, chat)
 			} else if IsInstagramLink(token) {
