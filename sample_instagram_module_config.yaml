@@ -1,0 +1,30 @@
+cookies:
+    csrftoken: xVxa
+    datr: rPfqYz
+    ds_user_id: 517
+    ig_did: AE58D1
+    ig_nrcb: "1"
+    mid: Y-r3dg-
+    sessionid: 51715463515%3ABxr3arN
+headers:
+    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+    accept-language: en-IN;q=0.7
+    authority: www.instagram.com
+    cache-control: no-cache
+    pragma: no-cache
+    sec-fetch-dest: document
+    sec-fetch-mode: navigate
+    sec-fetch-site: none
+    sec-fetch-user: ?1
+    sec-gpc: "1"
+    upgrade-insecure-requests: "1"
+    user_agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36
+whatsapp_allowed_groups:
+    - 917xxxxxxxxx-1469374836
+    - "12xxxxxxxxx2182123"
+    - 918xxxxxxxxx-1567274162
+    - "12xxxxxxxxx8589890"
+    - 918xxxxxxxxx-1563900277
+    - 918xxxxxxxxx-1563714919
+    - 919xxxxxxxxx-1408457926
+    - "12xxxxxxxxx4195510"
